@@ -36,7 +36,7 @@ a:hover,a:link,a:visited {text-decoration: none; color: black;}
 .slideHello {animation: slideLeftRight 1.6s ease forwards;}
 .slideInt {animation: slideLeftRight 1.8s ease forwards;}
 .slideName {animation: slideLeftRight 1.9s ease forwards;}
-.slideButtomUP {animation: slideButtomUP 2s ease forwards; transform: translateY(40px);}
+.slideButtomUP {animation: slideButtomUP 2s ease forwards;}
 /* ___PAGES___ */
 
 /* Index */
@@ -45,11 +45,11 @@ a:hover,a:link,a:visited {text-decoration: none; color: black;}
 
 /* ___KEYFRAMES___ */
 @keyframes slideLeftRight {
-    0% {transform: translateX(-1400px) scale(.1);}
+    0% {transform: translateX(-900px) scale(0.8);}
     100% {transform: translateY(0px) scale(1);}
 }
 
 @keyframes slideButtomUP {
-    0% {transform: translateY(300px);}
+    0% {transform: translateY(60px);}
     100% {transform: translateY(0px);}
 }
