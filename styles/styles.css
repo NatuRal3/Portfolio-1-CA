@@ -43,7 +43,7 @@ ul {padding-left: 0;}
 .slideInt {animation: slideLeftRight 1.8s ease forwards;}
 .slideName {animation: slideLeftRight 1.9s ease forwards;}
 .slideButtomUP {animation: slideButtomUP 2s ease forwards;}
-.slideInBG {animation: slideBG 1.3s ease forwards; background-color: #1b1b1b; height: 100%; width: 100%; position: absolute; z-index: -10;}
+/* .slideInBG {animation: slideBG 1.3s ease forwards; background-color: #1b1b1b; height: 100%; width: 100%; position: absolute; z-index: -10;} */
 
 
 
