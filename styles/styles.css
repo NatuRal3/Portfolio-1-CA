@@ -65,9 +65,9 @@ ul {padding-left: 0;}
 .contentContainer {min-height: 100vh; min-width: 100%; z-index: -10;}
 .contentSize {min-height: 100vh; width: 100%;}
 
-.projectsContainer {background-color: #252121; color: #fcf5f5; }
-.aboutContainer {background-color: #252121; color: #fcf5f5;}
-.contactContainer {background-color: #252121; color: #fcf5f5;}
+.projectsContainer {background-color: #1b1b1b; color: #fcf5f5; }
+.aboutContainer {background-color: #1b1b1b; color: #fcf5f5;}
+.contactContainer {background-color: #1b1b1b; color: #fcf5f5;}
 
 
 
