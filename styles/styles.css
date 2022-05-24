@@ -2,7 +2,7 @@
 
 html > * {font-family: "Roboto Slab", serif;}
 html,body {height: 100%; margin: 0; padding: 0px;}
-html {scroll-behavior: smooth;}
+html {scroll-behavior: smooth; scrollbar-color: rgb(87, 201, 163) #1b1b1b ;}
 
 
 /* Flex */
@@ -58,8 +58,8 @@ ul {padding-left: 0;}
 /* Content Pages */
 .contentNav {max-width: 900px; position: sticky; position: absolute; top: 20px; right: 40px;}
 .contentNav span {font-size: 2.5rem; color: #fcf5f5;}
-.navObject:hover {background-color: rgb(10, 10, 10);}
-.navActive {color: rgba(153, 251, 219, 0.35) !important;}
+.navObject:hover {color: rgb(87, 201, 163);}
+.navActive {color: rgb(87, 201, 163); !important;}
 
 
 .contentContainer {min-height: 100vh; min-width: 100%; z-index: -10;}
