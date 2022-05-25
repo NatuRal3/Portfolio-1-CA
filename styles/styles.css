@@ -59,16 +59,19 @@ ul {padding-left: 0;}
 .contentNav {max-width: 900px; position: sticky; position: absolute; top: 20px; right: 40px;}
 .contentNav span {font-size: 2.5rem; color: #fcf5f5;}
 .navObject:hover {color: rgb(87, 201, 163);}
-.navActive {color: rgb(87, 201, 163); !important;}
+.navActive {color: rgb(87, 201, 163) !important;}
 
 
 .contentContainer {min-height: 100vh; min-width: 100%; z-index: -10;}
+.contentContainer h1 {margin-left: 40px; padding-top: 15px;}
 .contentSize {min-height: 100vh; width: 100%;}
 
 .projectsContainer {background-color: #1b1b1b; color: #fcf5f5; }
 .aboutContainer {background-color: #1b1b1b; color: #fcf5f5;}
 .contactContainer {background-color: #1b1b1b; color: #fcf5f5;}
 
+.projectContent {margin: 30px 0px 0px 40px; max-width: 700px; background-color: rgb(87, 201, 163);}
+.projectImage {width: 500px; height: 500px; background-repeat: no-repeat; background-size: contain;}
 
 
 
