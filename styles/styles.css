@@ -47,13 +47,14 @@ ul {padding-left: 0;}
 
 /* ___PAGES___ */
 .border-radius {border-radius: 8px;}
+.width100 {width: 100%;}
 /* Index */
 .introContainer {color: #252121;}
 .indexNav {margin-top: 80px; width: 85%; max-width: 900px;}
 .divider {color: purple; font-size: 2rem; margin: 0px 15px; }
 
 /* Content Pages */
-.contentNav {max-width: 900px; position: fixed; top: 20px; right: 40px;}
+.contentNav {max-width: 900px; position: fixed; top: 20px; right: 20px;}
 .contentNav span {font-size: 2.5rem; color: #fcf5f5;}
 .navObject:hover {color: rgb(87, 201, 163);}
 .navActive {color: rgb(87, 201, 163) !important;}
@@ -62,22 +63,32 @@ ul {padding-left: 0;}
 .contentContainer h1 {margin-left: 40px; padding-top: 15px;}
 .contentSize {min-height: 100vh; width: 100%;}
 
-/* Containers */
-.projectsContainer {background-color: #1b1b1b; color: #fcf5f5; }
-.aboutContainer {background-color: #1b1b1b; color: #fcf5f5; height: 100%;}
-.contactContainer {background-color: #1b1b1b; color: #fcf5f5;}
+/* Container */
+.themeContainer {background-color: #1b1b1b; color: #fcf5f5;}
+.themeContainer h2 ,h3 {color: #1b1b1b;}
 
 /* Content */
-.projectContent {margin: 30px 0px 0px 40px; max-width: 700px; background-color: rgb(87, 201, 163);}
-.projectImage {width: 500px; height: 500px; background-repeat: no-repeat; background-size: contain;}
+.contentTile {margin: 30px 0px; min-width: 900px; max-width: 700px; background-color: #fff; border-radius: 10px;}
+.content {width: 100%;}
 
-.aboutContent {margin: 30px 0px 0px 40px; max-width: 700px; background-color: #fff; border-radius: 10px;}
+.projectImage {width: 500px; height: 380px; background-repeat: no-repeat; background-size: contain;}
+
 .aboutImage {width: 366px; height: 500px; background-repeat: no-repeat; background-size: contain;}
 .aboutText {color: #1b1b1b;}
 .aboutText h1 {margin-left: 0px;}
-.imageContainer {width: 366px; height: 500px; }
+/* .imageContainer {width: 366px; height: 500px; } */
 
-
+/* Form */
+/* .contactContainer {width: 280px;} */
+.headerContact {margin-bottom: 20px;}
+.formInput {border: black solid 1px;}
+.formTextbox{height: 200px;}
+.formButton {background-color: black; color: white; font-size: 1rem; border: none; border-radius: 3px; padding: 7px 0px; font-weight: bold;}
+.formButton:hover {color: cadetblue; cursor: pointer;}
+.formValidator {text-align: center;}
+.formValidStyle {border: solid 2px; border-radius: 4px; padding: 2px 0px; margin-bottom: 6px;}
+.formValidTrue{background-color: #d2f7cf87; border-color: #6ebc6e; }
+.formValidFalse{background-color: #ffb0b087; border-color: #943c3c; }
 /* ___KEYFRAMES___ */
 @keyframes slideLeftRight {
     0% {transform: translateX(-900px) scale(0.8);}

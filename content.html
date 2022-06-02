@@ -39,42 +39,56 @@
     </div>
 
     <div class="contentContainer">
-      <div id="Projects" class="projectsContainer contentSize flex column">
+      <div id="Projects" class="themeContainer contentSize flex column">
         <h1>Projects</h1>
         <div class="flex column align-items-center">
-          <div class="projectContent border-radius flex column align-items-center">
+          <div class="contentTile border-radius flex column align-items-center">
             <h2>Thinkersbox</h2>
-            <div class="flex row">
-              <div class="projectImage" style="background-image: url('images/thinkersbox_frontpage_200.jpg')" title="Image of site mentioned"></div>
-              <div class="info">info</div>
+            <div class="content flex row">
+              <div class="imageContainer"><div class="projectImage" style="background-image: url('images/thinkersbox_frontpage_200.jpg')" title="Image of site mentioned"></div></div>
+              <div class="info">
+                <span
+                  >Technology
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>CMS</li>
+                  </ul>
+                </span>
+                <div>
+                  <a href=""><img src="" alt="" /></a>
+                  <a href=""><img src="" alt="" /></a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="projectContent border-radius flex column align-items-center">
+          <div class="contentTile border-radius flex column align-items-center">
             <h2>Rainy Days</h2>
-            <div class="flex row">
-              <div class="projectImage" style="background-image: url('images/rainydays_frontpage_200.jpg')" title="Image of site mentioned"></div>
+            <div class="content flex row">
+              <div class="imageContainer"><div class="projectImage" style="background-image: url('images/rainydays_frontpage_200.jpg')" title="Image of site mentioned"></div></div>
               <div class="info">info</div>
             </div>
           </div>
 
-          <div class="projectContent border-radius flex column align-items-center">
+          <div class="contentTile border-radius flex column align-items-center">
             <h2>Community Sience Museum</h2>
-            <div class="flex row">
-              <div class="projectImage" style="background-image: url('images/communitysicencemuseum_frontpage_200.jpg')" title="Image of site mentioned"></div>
+            <div class="content flex row">
+              <div class="imageContainer"><div class="projectImage" style="background-image: url('images/communitysicencemuseum_frontpage_200.jpg')" title="Image of site mentioned"></div></div>
               <div class="info">info</div>
             </div>
           </div>
         </div>
       </div>
 
-      <div id="AboutMe" class="aboutContainer contentSize">
+      <div id="AboutMe" class="themeContainer contentSize">
         <h1>About Me</h1>
         <div class="flex column align-items-center">
-          <div class="aboutContent flex column">
+          <div class="contentTile flex column">
             <div class="flex row">
               <div class="imageContainer"><div class="aboutImage border-radius" style="background-image: url('images/me.png')" title="Image creator of this site"></div></div>
-              <div class="flex column align-items-center">
+              <div class="flex column align-items-center width100">
                 <div class="aboutText">
                   <h1>Marius Agerup</h1>
                 </div>
@@ -82,13 +96,13 @@
                 <div class="aboutText border-radius">
                   <div class="flex column">
                     <ul class="uppercase flex column">
-                      <li>Student</li>
-                      <div class="divider">/</div>
-                      <li>Security Expert</li>
-                      <div class="divider">/</div>
-                      <li>Frontend Developer</li>
-                      <div class="divider">/</div>
-                      <li>UI & UX Designer</li>
+                      <li><span class="divider">/</span>Student</li>
+
+                      <li><span class="divider">/</span>Security Expert</li>
+
+                      <li><span class="divider">/</span>Frontend Developer</li>
+
+                      <li><span class="divider">/</span>UI & UX Designer</li>
                     </ul>
                   </div>
                 </div>
@@ -96,21 +110,16 @@
             </div>
           </div>
 
-          <div class="aboutContent">
-            <div class="aboutText">
+          <div class="contentTile align-items-center">
+            <div class="aboutText flex column align-items-center">
               <h1>My Knowledge Stack</h1>
               <div>
                 <ul>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
+                  <li>HTML [========80%]</li>
+                  <li>CSS [========80%]</li>
+                  <li>JavaScript [====40%]</li>
+                  <li>Powershell [=======70%]</li>
+                  <li>T-SQL [=========90%]</li>
                 </ul>
               </div>
             </div>
@@ -118,9 +127,27 @@
         </div>
       </div>
 
-      <div id="Contact" class="contactContainer contentSize">
+      <div id="Contact" class="themeContainer contentSize">
         <h1>Lets Talk!</h1>
-        <div class="flex column align-items-center"></div>
+        <div class="flex column align-items-center">
+          <section class="contactContainer">
+            <div class="formValidator"></div>
+            <form id="formContact" class="flex column">
+              <label for="formFullName">Full Name</label>
+              <input class="formInput" type="text" minlength="5" required />
+
+              <label for="formEmail">Email</label>
+              <input class="formInput" type="email" required />
+
+              <label for="formSubject">Subject</label>
+              <input class="formInput" type="text" minlength="15" required />
+
+              <label for="formMessage">Message</label>
+              <textarea class="formInput formTextbox" type="text" minlength="25" required></textarea>
+              <button class="formButton">SUBMIT</button>
+            </form>
+          </section>
+        </div>
       </div>
     </div>
   </body>
