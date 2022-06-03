@@ -38,6 +38,10 @@ ul {padding-left: 0;}
 .indexButton::before {content: ""; position: absolute; left: 0; width: 100%; height: 100%; opacity: 0; transition: all 0.8s; border-width: 1px 0px; border-style: solid; border-color: black; transform: scale(0.1, 1);}
 .indexButton::after {content: ""; position: absolute; left: 0; width: 100%; height: 100%; background-color: rgba(15, 158, 111, 0.35); transition: all 0.8s;}
 
+/* Icons */
+#icons {color: #6ebc6e; background-color: #fcf5f5;}
+
+
 /* Animations */
 .slideHello {animation: slideLeftRight 1.6s ease forwards;}
 .slideInt {animation: slideLeftRight 1.8s ease forwards;}
