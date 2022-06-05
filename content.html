@@ -27,23 +27,23 @@
       </a>
       <a href="content.html#Projects">
         <div>
-          <span class="navObject">Projects</span>
+          <span id="projects" class="navObject">Projects</span>
         </div>
       </a>
       <a href="content.html#AboutMe">
         <div>
-          <span class="navObject">About Me</span>
+          <span id="aboutme" class="navObject">About Me</span>
         </div>
       </a>
       <a href="content.html#Contact">
         <div>
-          <span class="navObject">Contact</span>
+          <span id="contact" class="navObject">Contact</span>
         </div>
       </a>
     </nav>
 
     <div class="contentContainer">
-      <div id="Projects" class="themeContainer contentSize flex column">
+      <section id="Projects" class="themeContainer contentSize flex column">
         <h1>Projects</h1>
         <div class="flex column align-items-center">
           <div class="contentTile flex column align-items-center">
@@ -117,9 +117,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div id="AboutMe" class="themeContainer contentSize">
+      <section id="AboutMe" class="themeContainer contentSize">
         <h1>About Me</h1>
         <div class="flex column align-items-center">
           <div class="contentTile flex column">
@@ -170,30 +170,32 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div id="Contact" class="themeContainer contentSize">
+      <section id="Contact" class="themeContainer contentSize">
         <h1>Lets Talk!</h1>
         <div class="flex column align-items-center">
-          <section class="contactContainer">
-            <div class="formValidator"></div>
-            <form id="formContact" class="flex column">
-              <label for="formFullName">Full Name</label>
-              <input class="formInput" type="text" minlength="5" required />
+          <section class="contactContainer flex justify-content-center">
+            <div class="contentTile formTile">
+              <div class="formValidator"></div>
+              <form id="formContact" class="flex column">
+                <label for="formFullName">Full Name</label>
+                <input class="formInput" type="text" minlength="5" required />
 
-              <label for="formEmail">Email</label>
-              <input class="formInput" type="email" required />
+                <label for="formEmail">Email</label>
+                <input class="formInput" type="email" required />
 
-              <label for="formSubject">Subject</label>
-              <input class="formInput" type="text" minlength="5" required />
+                <label for="formSubject">Subject</label>
+                <input class="formInput" type="text" minlength="5" required />
 
-              <label for="formMessage">Message</label>
-              <textarea class="formInput formTextbox" type="text" minlength="25" required></textarea>
-              <button class="formButton">SUBMIT</button>
-            </form>
+                <label for="formMessage">Message</label>
+                <textarea class="formInput formTextbox" type="text" minlength="25" required></textarea>
+                <button class="formButton">SUBMIT</button>
+              </form>
+            </div>
           </section>
         </div>
-      </div>
+      </section>
     </div>
   </body>
   <script src="js/components/formValidator.js"></script>

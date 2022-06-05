@@ -2,7 +2,7 @@
 
 html > * {font-family: "Roboto Slab", serif;}
 html,body {height: 100%; margin: 0; padding: 0px;}
-html {scroll-behavior: smooth; scrollbar-color: rgb(87, 201, 163) #1b1b1b ;}
+html {scroll-behavior: smooth; scrollbar-color: rgb(45, 131, 102) #1b1b1b ;}
 
 
 /* Flex */
@@ -22,7 +22,7 @@ h2 {font-size: 2rem;}
 h3 {font-size: 1.6rem;}
 p {font-size: 1.2rem; color: black;}
 a, ul {font-size: 1.1rem; text-transform: uppercase;}
-a:hover,a:link,a:visited {text-decoration: none; color: black;}
+a:hover,a:link,a:visited {text-decoration: none; color: rgb(255, 255, 255);}
 .uppercase {text-transform: uppercase;}
 li {overflow: hidden;}
 ul {padding-left: 0;}
@@ -39,10 +39,10 @@ ul {padding-left: 0;}
 .indexButton::after {content: ""; position: absolute; left: 0; width: 100%; height: 100%; background-color: rgba(15, 158, 111, 0.35); transition: all 0.8s;}
 
 /* Icons */
-.icons {font-size: 2rem; color: rgb(57, 166, 130);}
-.icons:hover {color: rgb(0, 0, 0);}
+.icons {font-size: 2.2rem; color: rgb(45, 131, 102);}
+.icons:hover {color:purple;}
 .iconsMe {font-size: 2rem; color: purple;}
-.iconsMe:hover {color: rgb(0, 0, 0);}
+.iconsMe:hover {color: rgb(45, 131, 102);}
 
 
 /* Animations */
@@ -65,20 +65,20 @@ ul {padding-left: 0;}
 
 /* Content Pages */
 /* NAV */
-.contentNav {width: 290px; position: fixed; top: 10px; right: 5px; flex-direction: row;}
-.contentNav span {font-size: 1.2rem; color: #fcf5f5; background-color: purple;}
-.navObject:hover {color: rgb(87, 201, 163);}
-.navActive {color: rgb(87, 201, 163) !important;}
+.contentNav {width: 100%; position: fixed; top: 0px; flex-direction: row;   background-color: purple;}
+.contentNav span {font-size: 1.2rem; color: #ffffff; font-weight: bold;}
+.navObject:hover {color: rgb(45, 131, 102);}
+.navActive {color: rgb(24, 217, 152) !important;}
 
 /* Container */
 .contentContainer {min-height: 100vh; min-width: 100%;}
 .contentContainer h1 {margin-left: 40px; padding-top: 40px; font-size: 2rem;}
 .contentSize {min-height: 100vh; width: 100%;}
-.themeContainer {background-color: #1b1b1b; color: #fcf5f5;}
+.themeContainer {background-color: #ffffff; color: #121212;}
 .themeContainer h2 ,h3, p, span, ul {color: #1b1b1b;}
 
 /* Content */
-.contentTile {margin: 30px 0px; width: 360px; background-color: #fff;}
+.contentTile {margin: 30px 0px; width: 360px; background-color: #fff; box-shadow: 0px 0px 13px -3px #d3bed1;}
 .content {width: 100%;}
 .contentSpan {margin-top: 10px;font-size: 1.1rem; text-transform: uppercase; color: #1b1b1b; font-family: "Oswald", sans-serif;}
 .contentDesc {font-size: 1rem;}
@@ -93,7 +93,8 @@ ul {padding-left: 0;}
 .aboutText h1 {margin-left: 0px;}
 
 /* Form */
-.contactContainer {width: 280px;   font-size: 1.5rem;}
+.formTile {padding: 10px;}
+.contactContainer {font-size: 1.5rem;}
 .formInput {border: black solid 1px;}
 .formTextbox{height: 200px;}
 .formButton {background-color: black; color: white; font-size: 2rem; border: none; border-radius: 3px; padding: 7px 0px; font-weight: bold;}
@@ -126,9 +127,9 @@ ul {padding-left: 0;}
 @media (min-width: 600px) {
   .indexNav {flex-direction: column;}
 
-  .contentNav {width: 370px; position: fixed; top: 20px; right: 10px; flex-direction: row;}
+  /* .contentNav {width: 100%; position: fixed; top: 0px; flex-direction: row;   background-color: purple;} */
   .contentNav span {font-size: 1.6rem;}
-  .contentTile {margin: 30px 0px; min-width: 420px; }
+  .contentTile {margin: 30px 0px; min-width: 420px;}
   .projectImage {width: 100%; height: 395px; background-repeat: no-repeat; background-size: cover;}
   .content{flex-direction: column-reverse;}
   .contentDesc {font-size: 1.5rem;}
@@ -153,7 +154,7 @@ ul {padding-left: 0;}
     .indexCTA {width: 190px;}
 
     /* NAV */
-    .contentNav {max-width: 900px; position: fixed; top: 20px; right: 20px; flex-direction: row;}
+    /* .contentNav {width: 100%; position: fixed; top: 0px; flex-direction: row; background-color: purple;} */
     .contentNav span {font-size: 1.8rem;}
     .contentTile {margin: 30px 0px; min-width: 690px; }
     .projectImage {width: 320px; height: 290px; background-repeat: no-repeat; background-size: cover;}
@@ -171,8 +172,9 @@ ul {padding-left: 0;}
   @media (min-width: 1200px) {
     .indexCTA {width: 240px;}
 
-    .contentNav {position: fixed; width: 160px; flex-direction: column;}
-    .contentNav span {font-size: 2.2rem; background-color:#1b1b1b}
+    .contentNav {position: fixed; width: 150px; right: 10px; flex-direction: column; ; background-color: #fff;}
+    .contentNav span {font-size: 2.2rem; color: #121212; font-weight: normal;}
+    .navActive {color: rgb(45, 131, 102) !important;}
     .contentTile {margin: 30px 0px; min-width: 820px; max-width: 700px; }
     .projectImage {width: 430; height: 350px;}
     .info {width: 100%; margin-right: 20px; align-items: end; justify-content: space-around;}
