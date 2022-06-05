@@ -65,8 +65,8 @@ ul {padding-left: 0;}
 
 /* Content Pages */
 /* NAV */
-.contentNav {width: 100%; position: fixed; top: 0px; flex-direction: row;   background-color: purple;}
-.contentNav span {font-size: 1.2rem; color: #ffffff; font-weight: bold;}
+.contentNav {width: 100%; position: fixed; top: 0px; flex-direction: row;   background-color: purple; z-index: 10;}
+.contentNav span {font-size: 1.2rem; color: #ffffff;}
 .navObject:hover {color: rgb(45, 131, 102);}
 .navActive {color: rgb(24, 217, 152) !important;}
 
@@ -74,12 +74,20 @@ ul {padding-left: 0;}
 .contentContainer {min-height: 100vh; min-width: 100%;}
 .contentContainer h1 {margin-left: 40px; padding-top: 40px; font-size: 2rem;}
 .contentSize {min-height: 100vh; width: 100%;}
-.themeContainer {background-color: #ffffff; color: #121212;}
+.themeContainer {background-color: #f2f2f2; color: #121212;}
 .themeContainer h2 ,h3, p, span, ul {color: #1b1b1b;}
 
 /* Content */
-.contentTile {margin: 30px 0px; width: 360px; background-color: #fff; box-shadow: 0px 0px 13px -3px #d3bed1;}
+.contentTile {margin: 30px 0px; width: 360px; background-color: #fff; box-shadow: 0px 0px 8px 2px #d3bed1}
 .content {width: 100%;}
+
+.tile-transform{transition: transform .3s; z-index: 1;}
+.tile-transform:hover{transform: scale(1.05);}
+/* .grayscale{filter: grayscale(60%);}
+.grayscale:hover{filter: grayscale(0%);} */
+
+
+
 .contentSpan {margin-top: 10px;font-size: 1.1rem; text-transform: uppercase; color: #1b1b1b; font-family: "Oswald", sans-serif;}
 .contentDesc {font-size: 1rem;}
 .gap {gap: 5px; margin-top: 2px;}
@@ -172,7 +180,7 @@ ul {padding-left: 0;}
   @media (min-width: 1200px) {
     .indexCTA {width: 240px;}
 
-    .contentNav {position: fixed; width: 150px; right: 10px; flex-direction: column; ; background-color: #fff;}
+    .contentNav {position: fixed; width: 150px; right: 10px; flex-direction: column; ; background-color: #f2f2f2;}
     .contentNav span {font-size: 2.2rem; color: #121212; font-weight: normal;}
     .navActive {color: rgb(45, 131, 102) !important;}
     .contentTile {margin: 30px 0px; min-width: 820px; max-width: 700px; }
